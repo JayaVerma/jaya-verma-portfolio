@@ -1,0 +1,413 @@
+{
+  "personal": {
+    "name": "Jaya Verma",
+    "email": "jayaverma3762@gmail.com",
+    "phone": "+1 5615525500",
+    "location": "Tampa, FL",
+    "visa_status": "F1-OPT",
+    "linkedin": "https://www.linkedin.com/in/jaya0902verma/",
+    "github": "https://github.com/jayaverma",
+    "portfolio": "https://jaya-verma-portfolio.lovable.app/"
+  },
+
+  "education": [
+    {
+      "degree": "Master of Science, Data Intelligence",
+      "institution": "University of South Florida",
+      "location": "Tampa, FL",
+      "dates": "01/2024 – 12/2025",
+      "gpa": "3.82/4.0",
+      "courses": [
+        "Statistical Foundations of Data Intelligence",
+        "Probabilistic System Analysis",
+        "Data Structure Essentials",
+        "Data Mining",
+        "Optimization Methods with Applications",
+        "Deep Learning Analysis",
+        "Intro to AI",
+        "Applied Data Intelligence",
+        "Reinforcement Learning",
+        "Foundational Machine Learning",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "degree": "Bachelor of Technology, Electronics and Telecommunications Engineering",
+      "institution": "University of Mumbai",
+      "location": "Mumbai, India",
+      "dates": "07/2019 – 2023",
+      "gpa": "8.9/10",
+      "activities": "Part of the ISF IETE RGIT college committee for 3 years; Event Management Secretary for 2022–2023.",
+      "courses": [
+        "Engineering Mathematics",
+        "Probability and Statistics",
+        "Data Structures and Algorithms",
+        "Skill Labs — C, Java, Python",
+        "Image Preprocessing and Machine Vision",
+        "Database Management System",
+        "Artificial Neural Networks and Fuzzy Logic",
+        "Computer Communication and Networks"
+      ]
+    }
+  ],
+
+  "skills": {
+    "programming": ["Python", "SQL", "MySQL", "PostgreSQL", "Microsoft SQL Server", "RegEx", "PowerShell", "JavaScript", "TypeScript"],
+    "automation_testing": ["Test Automation", "Git", "Unit Testing", "CI/CD", "DevOps", "Linux CLI", "Version Control", "System-level Testing", "n8n", "Airflow"],
+    "platforms_tools": ["Linux", "Windows", "MacOS", "GitHub", "HPC", "Tableau", "Power BI", "Excel Macros", "MCP", "Docker", "AWS", "FastAPI", "Snowflake", "Linear", "HubSpot"],
+    "ml_ai": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "Predictive Modeling", "LLMs", "Agentic AI", "RAG", "NLP", "Computer Vision", "CrewAI", "OpenAI API", "Claude API", "Google AI Studio"],
+    "frameworks": ["LangChain", "LangGraph", "Streamlit", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "TensorFlow", "PyTorch", "Transformers", "Hugging Face", "Next.js", "React", "shadcn/ui", "Drizzle ORM", "Node.js"],
+    "cloud": ["AWS Fargate", "AWS ECR", "AWS Secrets Manager", "Docker", "GitHub Actions", "GCP", "Google Cloud Functions", "Cloud Run", "Cloud Scheduler", "Cloud SQL", "Secret Manager", "GCS", "BigQuery", "Vercel", "Google Slides API", "Google Drive API"]
+  },
+
+  "experiences": [
+    {
+      "id": "fedcon",
+      "title": "AI Engineer",
+      "company": "FEDCON",
+      "subtitle": "Federal Government Contracting Consultancy",
+      "location": "USA",
+      "dates": "01/2026 – Present",
+      "is_current": true,
+      "summary": "Build production AI systems for federal-opportunity intelligence: LLM scoring pipelines, automated content generation, and the data infrastructure that feeds them. 108 merged PRs across 35+ repositories.",
+      "stack": "Python · TypeScript / Next.js · SQL (Postgres, BigQuery) · Anthropic Claude API · LLM pipeline design · MCP server development · RAG-style retrieval · GCP (Cloud Run, Cloud SQL, BigQuery, Scheduler, Secret Manager, WIF) · Vercel · HubSpot & Google Workspace APIs",
+      "bullets": [
+        {
+          "id": "fedcon_b1",
+          "text": "Designed and own an LLM-powered opportunity-scoring engine (Anthropic Claude API) that ranks federal solicitations against client profiles across 19 weighted dimensions; engine output feeds 7 downstream consumers across 4 repos (sales decks, advisor portal, call cards).",
+          "tags": {
+            "role_types": ["ai_engineer", "ml_engineer", "software_engineer"],
+            "skills": ["llm", "claude_api", "system_design", "python", "scoring"],
+            "keywords": ["LLM", "Claude", "scoring engine", "Anthropic API", "system design"],
+            "strength": "high",
+            "impact_type": "system_design"
+          }
+        },
+        {
+          "id": "fedcon_b2",
+          "text": "Optimized the scoring pipeline with prompt caching and a Haiku/Sonnet model-tiering strategy, cutting inference cost to ~$0.01 per prospect and making AI scoring viable at production scale across ~190 clients.",
+          "tags": {
+            "role_types": ["ai_engineer", "ml_engineer", "software_engineer"],
+            "skills": ["llm", "claude_api", "prompt_caching", "cost_optimization", "model_tiering"],
+            "keywords": ["prompt caching", "Haiku", "Sonnet", "model tiering", "cost optimization"],
+            "strength": "high",
+            "impact_type": "performance_optimization"
+          }
+        },
+        {
+          "id": "fedcon_b3",
+          "text": "Built an automated content-generation pipeline that turns structured CRM data into tailored pitch decks and client capability statements, replacing manual assembly for the business-development team.",
+          "tags": {
+            "role_types": ["ai_engineer", "automation_engineer", "software_engineer"],
+            "skills": ["llm", "automation", "content_generation", "hubspot", "python"],
+            "keywords": ["content generation", "automation", "pitch decks", "capability statements", "CRM"],
+            "strength": "high",
+            "impact_type": "product_delivery"
+          }
+        },
+        {
+          "id": "fedcon_b4",
+          "text": "Engineered the data infrastructure powering the AI layer — a federal-leads pipeline spanning 3 GCP projects (Cloud Run Jobs, Cloud SQL, BigQuery, Cloud Scheduler) that ingests SAM.gov and HigherGov data and exposes clean, scored datasets to the models.",
+          "tags": {
+            "role_types": ["data_engineer", "backend_engineer", "software_engineer"],
+            "skills": ["gcp", "cloud_run", "cloud_sql", "bigquery", "cloud_scheduler", "data_pipeline"],
+            "keywords": ["GCP", "BigQuery", "Cloud Run", "Cloud SQL", "data pipeline", "SAM.gov", "HigherGov"],
+            "strength": "high",
+            "impact_type": "infrastructure_improvement"
+          }
+        },
+        {
+          "id": "fedcon_b5",
+          "text": "Developed custom MCP (Model Context Protocol) servers and Claude Code plugins/agents to extend internal AI tooling and integrate HubSpot CRM, Google Workspace, and Canva into agentic workflows.",
+          "tags": {
+            "role_types": ["ai_engineer", "software_engineer", "automation_engineer"],
+            "skills": ["mcp", "agentic_ai", "claude_api", "hubspot", "google_workspace_api"],
+            "keywords": ["MCP", "Model Context Protocol", "Claude Code", "agents", "agentic workflows"],
+            "strength": "high",
+            "impact_type": "capability_unlock"
+          }
+        },
+        {
+          "id": "fedcon_b6",
+          "text": "Shipped reliability practices for AI systems in production: schema-verified prompts, graceful LLM-failure handling surfaced into response payloads, streaming for long generations, and dry-run gating before any bulk write.",
+          "tags": {
+            "role_types": ["ai_engineer", "software_engineer", "devops_engineer"],
+            "skills": ["llm", "reliability", "streaming", "claude_api", "production"],
+            "keywords": ["reliability", "schema validation", "streaming", "failure handling", "dry-run"],
+            "strength": "high",
+            "impact_type": "reliability_improvement"
+          }
+        }
+      ]
+    },
+    {
+      "id": "usf_ra",
+      "title": "Research Assistant — AI & Data Extraction",
+      "company": "University of South Florida",
+      "location": "Tampa, FL",
+      "dates": "08/2024 – 05/2025",
+      "is_current": false,
+      "bullets": [
+        {
+          "id": "usf_b1",
+          "text": "Spearheaded adaptation of the EXSCLAIM! tool to autonomously extract microscopy images from scientific literature at scale, establishing a protein-polymer image repository that serves as the training data foundation for ML-based materials research.",
+          "tags": {
+            "role_types": ["ml_engineer", "ai_engineer", "data_engineer", "research"],
+            "skills": ["python", "web_scraping", "automation", "data_extraction", "ml"],
+            "keywords": ["automation", "data extraction", "machine learning", "research", "scalable", "image repository"],
+            "strength": "high",
+            "impact_type": "research_contribution"
+          }
+        },
+        {
+          "id": "usf_b2",
+          "text": "Orchestrated journal scraping pipeline integration across multiple scientific publishers (Nature, RSC Soft Matter Journal), troubleshooting WebDriver issues and optimizing HTML parsing strategies to expand data collection scope by 2x.",
+          "tags": {
+            "role_types": ["data_engineer", "software_engineer", "automation_engineer"],
+            "skills": ["python", "web_scraping", "html_parsing", "selenium", "pipeline"],
+            "keywords": ["web scraping", "pipeline", "automation", "HTML parsing", "data collection", "Python"],
+            "strength": "medium",
+            "impact_type": "scope_expansion"
+          }
+        },
+        {
+          "id": "usf_b3",
+          "text": "Administered a private GitHub repository and integrated project execution on the Circe HPC system with SSH authentication, ensuring structured image storage, retrieval scalability, and reproducible research workflows.",
+          "tags": {
+            "role_types": ["software_engineer", "data_engineer", "research"],
+            "skills": ["github", "hpc", "linux", "devops", "version_control"],
+            "keywords": ["GitHub", "HPC", "Linux", "DevOps", "version control", "scalable", "reproducible"],
+            "strength": "medium",
+            "impact_type": "infrastructure_improvement"
+          }
+        }
+      ]
+    },
+    {
+      "id": "suvidha_ml",
+      "title": "Machine Learning Intern",
+      "company": "Suvidha Foundations",
+      "location": "India",
+      "dates": "12/2021 – 03/2022",
+      "is_current": false,
+      "bullets": [
+        {
+          "id": "suvidha_b1",
+          "text": "Conducted a systematic review of 100–150 NLP research papers documenting key methodologies, performance trade-offs, and architectural limitations across Transformer-based, RNN, and encoder-decoder models to inform future model selection decisions.",
+          "tags": {
+            "role_types": ["nlp_engineer", "ml_engineer", "research"],
+            "skills": ["nlp", "transformers", "rnns", "research", "model_evaluation"],
+            "keywords": ["NLP", "Transformer", "RNN", "research", "model evaluation", "literature review"],
+            "strength": "medium",
+            "impact_type": "research_contribution"
+          }
+        },
+        {
+          "id": "suvidha_b2",
+          "text": "Analyzed and compared semantic graphs and sequence-to-sequence architectures for summarization and text generation tasks, compiling a structured internal knowledge base that reduced future model selection time for the team.",
+          "tags": {
+            "role_types": ["nlp_engineer", "ml_engineer"],
+            "skills": ["nlp", "seq2seq", "text_generation", "technical_writing"],
+            "keywords": ["sequence-to-sequence", "text summarization", "NLP", "knowledge base", "semantic"],
+            "strength": "medium",
+            "impact_type": "knowledge_transfer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "elite_ds",
+      "title": "Data Science Intern",
+      "company": "Elite Techno Group",
+      "location": "India",
+      "dates": "05/2021 – 09/2021",
+      "is_current": false,
+      "bullets": [
+        {
+          "id": "elite_b1",
+          "text": "Developed and optimized supervised learning models (Random Forest, SVM) on real-world datasets using Python, achieving high accuracy through systematic data preprocessing, feature engineering, and cross-validation pipelines.",
+          "tags": {
+            "role_types": ["ml_engineer", "data_scientist"],
+            "skills": ["python", "scikit_learn", "random_forest", "svm", "feature_engineering"],
+            "keywords": ["supervised learning", "Random Forest", "SVM", "feature engineering", "Python", "model optimization"],
+            "strength": "medium",
+            "impact_type": "model_performance"
+          }
+        },
+        {
+          "id": "elite_b2",
+          "text": "Integrated Python with SQL databases for end-to-end EDA and model deployment pipelines, simulating production-grade data science workflows including data ingestion, transformation, and evaluation reporting.",
+          "tags": {
+            "role_types": ["data_scientist", "data_engineer"],
+            "skills": ["python", "sql", "eda", "data_pipeline", "model_deployment"],
+            "keywords": ["SQL", "EDA", "data pipeline", "model deployment", "Python", "production"],
+            "strength": "medium",
+            "impact_type": "workflow_automation"
+          }
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "stock_agent",
+      "title": "Stock Prediction Agent",
+      "url": "https://github.com/JayaVerma/Stock_price_agent",
+      "tech": "Python · LangChain · LangGraph · MCP · Bright Data API · Agentic AI",
+      "bullets": [
+        {
+          "id": "stock_b1",
+          "text": "Developed an AI-powered multi-agent system using LangChain, LangGraph, and MCP (Bright Data) to generate actionable short-term trading recommendations for NYSE-listed companies, coordinating specialized agents under a supervisor agent architecture.",
+          "tags": {
+            "role_types": ["ai_engineer", "ml_engineer", "software_engineer"],
+            "skills": ["langchain", "langgraph", "mcp", "agentic_ai", "python", "multi_agent"],
+            "keywords": ["LangChain", "LangGraph", "MCP", "multi-agent", "agentic AI", "trading", "supervisor agent"],
+            "strength": "high",
+            "impact_type": "system_design"
+          }
+        },
+        {
+          "id": "stock_b2",
+          "text": "Orchestrated specialized agents for stock discovery, real-time market data analysis, news sentiment classification, and buy/sell/hold recommendation generation, delivering actionable target entry prices with sentiment-backed interpretability.",
+          "tags": {
+            "role_types": ["ai_engineer", "nlp_engineer"],
+            "skills": ["nlp", "sentiment_analysis", "agentic_ai", "langchain", "langgraph"],
+            "keywords": ["sentiment analysis", "NLP", "agentic AI", "real-time", "recommendation", "classification"],
+            "strength": "high",
+            "impact_type": "capability_delivery"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rag_portal",
+      "title": "Document Analysis, Chat & Comparison Portal with Advanced RAG",
+      "url": "https://github.com/JayaVerma/End-to-End_Document_portal_project",
+      "tech": "Python · LangChain · FastAPI · Streamlit · AWS (Fargate, ECR, Secrets Manager) · Docker · GitHub Actions · LLMs · Vector Stores",
+      "bullets": [
+        {
+          "id": "rag_b1",
+          "text": "Engineered and deployed an Advanced RAG Pipeline (Ingestion → Retriever → Generator) for intelligent document analysis, optimizing retrieval accuracy using Query Rewriting (RAG Fusion/ReAct) and MMR Rerankers with LangChain chunking and indexing.",
+          "tags": {
+            "role_types": ["ai_engineer", "ml_engineer", "software_engineer"],
+            "skills": ["rag", "langchain", "vector_stores", "llm", "python", "retrieval"],
+            "keywords": ["RAG", "LangChain", "retrieval", "vector store", "LLM", "document analysis", "RAG Fusion", "ReAct"],
+            "strength": "high",
+            "impact_type": "system_design"
+          }
+        },
+        {
+          "id": "rag_b2",
+          "text": "Drove end-to-end technical delivery of a full-stack AI platform: FastAPI backend, Streamlit UI, automated CI/CD via GitHub Actions and Docker, deployed on AWS Fargate and ECR for production-scale scalability.",
+          "tags": {
+            "role_types": ["software_engineer", "ai_engineer"],
+            "skills": ["fastapi", "streamlit", "docker", "github_actions", "aws", "cicd"],
+            "keywords": ["FastAPI", "Streamlit", "Docker", "AWS", "CI/CD", "production", "full-stack", "Fargate", "ECR"],
+            "strength": "high",
+            "impact_type": "infrastructure_delivery"
+          }
+        },
+        {
+          "id": "rag_b3",
+          "text": "Optimized throughput using local LLMs (vLLM/Groq) and quantized models, implemented Cache-Augmented Generation (CAG) to accelerate repeated query responses, achieving low-latency production-ready AI services.",
+          "tags": {
+            "role_types": ["ai_engineer", "ml_engineer"],
+            "skills": ["llm", "vllm", "groq", "caching", "optimization", "quantization"],
+            "keywords": ["LLM", "vLLM", "Groq", "cache-augmented generation", "low-latency", "optimization", "quantization"],
+            "strength": "high",
+            "impact_type": "performance_optimization"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nlp_summarizer",
+      "title": "Abstractive NLP Text Summarizer",
+      "url": "https://github.com/JayaVerma/TEXT-SUMMARIZATION",
+      "tech": "Python · NLP · BERT · Pegasus · Simple T5 · XLNet · GPT-2",
+      "bullets": [
+        {
+          "id": "nlp_b1",
+          "text": "Built and fine-tuned a chat summarization system using BERT, Pegasus, Simple T5, XLNet, and GPT-2 on the SAMSUM dataset, comparing model performance and deploying the best-performing Pegasus model as a web application.",
+          "tags": {
+            "role_types": ["nlp_engineer", "ml_engineer"],
+            "skills": ["nlp", "bert", "transformers", "fine_tuning", "python", "model_deployment"],
+            "keywords": ["NLP", "BERT", "Pegasus", "GPT-2", "fine-tuning", "text summarization", "Transformers", "Hugging Face"],
+            "strength": "medium",
+            "impact_type": "model_comparison"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bone_fracture",
+      "title": "Bone Fracture Detection — CNN",
+      "url": "https://github.com/JayaVerma/Bone_Fracture_Detection",
+      "tech": "Python · Deep Learning · CNN · TensorFlow · MURAv1.1 Dataset",
+      "bullets": [
+        {
+          "id": "bone_b1",
+          "text": "Developed a CNN model on the MURAv1.1 medical imaging dataset to detect bone fractures from X-ray images, achieving 87.5% accuracy, 92% precision, 94.29% specificity, and 85.18% F1 score on held-out test data.",
+          "tags": {
+            "role_types": ["ml_engineer", "data_scientist"],
+            "skills": ["cnn", "tensorflow", "deep_learning", "computer_vision", "python"],
+            "keywords": ["CNN", "deep learning", "computer vision", "TensorFlow", "medical imaging", "accuracy", "F1 score"],
+            "strength": "medium",
+            "impact_type": "model_performance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "flight_price",
+      "title": "Flight Price Prediction ML Model",
+      "url": "https://github.com/JayaVerma/Flight-Price_prediction-ML-Model",
+      "tech": "Python · Pandas · NumPy · Matplotlib · Seaborn · Scikit-Learn",
+      "bullets": [
+        {
+          "id": "flight_b1",
+          "text": "Preprocessed 10,000+ real-world flight records across 41 features and trained Random Forest, Decision Tree, Linear Regression, and KNN models, achieving 95–97% training accuracy with Random Forest and Decision Tree Regressors.",
+          "tags": {
+            "role_types": ["data_scientist", "ml_engineer"],
+            "skills": ["scikit_learn", "random_forest", "pandas", "feature_engineering", "python"],
+            "keywords": ["Random Forest", "regression", "Scikit-learn", "feature engineering", "Pandas", "EDA", "prediction"],
+            "strength": "low",
+            "impact_type": "model_performance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hr_dashboard",
+      "title": "HR Analytics Dashboard",
+      "url": "https://drive.google.com/file/d/1WOSQd2SW9wgIszHApgueHgaLBYkE5Bdw/view?usp=drive_link",
+      "tech": "Power BI · Excel · DAX · Data Visualization · KPI Reporting",
+      "bullets": [
+        {
+          "id": "hr_b1",
+          "text": "Designed an executive-ready Power BI dashboard tracking attrition rate, salary trends, employee demographics, and job satisfaction KPIs, delivering visualizations (donut charts, heatmaps, bar graphs) to surface attrition drivers by role, tenure, and education.",
+          "tags": {
+            "role_types": ["data_scientist", "data_engineer"],
+            "skills": ["power_bi", "dax", "data_visualization", "kpi", "excel"],
+            "keywords": ["Power BI", "DAX", "dashboard", "KPI", "data visualization", "analytics", "attrition", "HR analytics"],
+            "strength": "medium",
+            "impact_type": "stakeholder_insight"
+          }
+        }
+      ]
+    }
+  ],
+
+  "achievements": [
+    {
+      "id": "jetir_paper",
+      "text": "Published research paper at JETIR on Text Summarization using Pre-trained NLP models.",
+      "tags": {
+        "role_types": ["nlp_engineer", "research"],
+        "skills": ["research", "nlp", "technical_writing"],
+        "keywords": ["published research", "NLP", "text summarization", "JETIR"]
+      }
+    }
+  ]
+}

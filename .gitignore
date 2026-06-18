@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# original photo source (cutout lives in public/images)
+IMG_7999.JPG

@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jaya Verma — Portfolio
 
-## Getting Started
+A fast, data-driven portfolio for an AI Engineer. Built with **Next.js 16
+(App Router)**, **Tailwind v4**, and **Framer Motion**. Refined dark theme,
+fully responsive, SEO-ready.
 
-First, run the development server:
+Everything on the page is generated from a single source of truth:
+**`src/data/portfolio.json`** — edit that file and the whole site updates.
+
+## Quick start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm start        # serve the production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| What | Where |
+| --- | --- |
+| All text (experience, projects, skills, education, publication) | `src/data/portfolio.json` |
+| Résumé PDF (download button) | `public/resume/Jaya_Verma_Resume.pdf` (replace this file) |
+| Research paper PDF | drop any `*.pdf` into `public/papers/` — the Publications section auto-links the first one |
+| Profile photo | drop `profile.jpg` (or `.png`/`.webp`) into `public/images/` — the hero auto-detects it; until then it shows a styled placeholder |
+| Theme colors / fonts | `src/app/globals.css` (`@theme` block) |
+| SEO title/description/OG + the deployed URL | `src/app/layout.tsx` (`siteUrl`) |
+| Hero stats strip | `stats` array in `src/components/sections/Hero.tsx` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy to Vercel (free)
 
-## Learn More
+1. Push this folder to a new GitHub repo:
+   ```bash
+   git add -A
+   git commit -m "Portfolio site"
+   git branch -M main
+   git remote add origin https://github.com/jayaverma/portfolio.git
+   git push -u origin main
+   ```
+2. Go to **vercel.com → New Project → Import** the repo. Framework is
+   auto-detected as Next.js — just click **Deploy**.
+3. Live in ~1 min at `your-project.vercel.app`. Every `git push` to `main`
+   redeploys automatically.
+4. (Optional) Add a custom domain in Vercel → Settings → Domains, then update
+   `siteUrl` in `src/app/layout.tsx`.
 
-To learn more about Next.js, take a look at the following resources:
+> After deploying, update `siteUrl` in `src/app/layout.tsx` to your real URL so
+> Open Graph share previews resolve correctly.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    layout.tsx      # fonts, SEO metadata, JSON-LD Person schema
+    page.tsx        # composes the sections
+    globals.css     # theme tokens, grain/vignette, scrollbar
+  components/
+    Nav.tsx
+    sections/       # Hero, About, Experience, Projects, Skills, Publications, Education, Contact
+    ui-bits/        # SectionHeading, TechChip, MotionReveal, DownloadButton, BrandIcons
+  data/
+    portfolio.json  # ← single source of truth
+    portfolio.ts    # typed accessor
+  lib/
+    assets.ts       # auto-detect profile photo + research paper
+    cn.ts
+```
