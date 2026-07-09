@@ -69,7 +69,7 @@
       "location": "USA",
       "dates": "01/2026 – Present",
       "is_current": true,
-      "summary": "Build production AI systems for federal-opportunity intelligence: LLM scoring pipelines, automated content generation, and the data infrastructure that feeds them. 108 merged PRs across 35+ repositories.",
+      "summary": "Build production AI systems for federal-opportunity intelligence: LLM scoring pipelines, automated content generation, and the data infrastructure that feeds them. 150+ merged PRs across 40+ repositories.",
       "stack": "Python · TypeScript / Next.js · SQL (Postgres, BigQuery) · Anthropic Claude API · LLM pipeline design · MCP server development · RAG-style retrieval · GCP (Cloud Run, Cloud SQL, BigQuery, Scheduler, Secret Manager, WIF) · Vercel · HubSpot & Google Workspace APIs",
       "bullets": [
         {

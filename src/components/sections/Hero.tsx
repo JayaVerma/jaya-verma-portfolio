@@ -8,9 +8,9 @@ import { Spotlight } from "@/components/ui-bits/Spotlight";
 import { AnimatedCounter } from "@/components/ui-bits/AnimatedCounter";
 
 const stats = [
-  { target: 700, suffix: "+", label: "commits · 3 months", color: "text-violet" },
-  { target: 108, suffix: "", label: "PRs merged", color: "text-cyan" },
-  { target: 35, suffix: "+", label: "repositories", color: "text-fuchsia" },
+  { target: 1000, suffix: "+", label: "commits · 3 months", color: "text-violet" },
+  { target: 150, suffix: "+", label: "PRs merged", color: "text-cyan" },
+  { target: 40, suffix: "+", label: "repositories", color: "text-fuchsia" },
   { target: 6, suffix: "+", label: "production AI systems", color: "text-amber" },
 ];
 
